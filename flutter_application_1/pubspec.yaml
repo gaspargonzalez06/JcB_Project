@@ -37,6 +37,8 @@ dependencies:
   carousel_slider:
   flutter_swiper: ^1.1.6
   smooth_page_indicator: ^0.3.0-nullsafety.0
+  charts_flutter: ^0.12.0
+  pie_chart: ^5.1.0
 
 dev_dependencies:
   flutter_test:
@@ -63,8 +65,8 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
      - assets/logo.png
-     - assets/3CX.jpg
-     - assets/4CX.jpg
+     - assets/3CX.jpeg
+     - assets/4CX.jpeg
      - assets/455ZX.jpg
      - assets/1CX.jpg
      - assets/533-105.jpg

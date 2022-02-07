@@ -1,5 +1,6 @@
 import 'dart:js';
 
+import 'package:charts_flutter/flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/pages/produ1.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
@@ -20,36 +21,64 @@ class HomePageState extends  State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.orange,
+      backgroundColor: Colors.white,
       appBar: AppBar(
         
         title: Text("Seleccione Equipo a cotizar"),
-        backgroundColor: Colors.orange
+        backgroundColor: Colors.black
       ),
-      body:Container(color: Colors.black,
+      body:Container(color: Colors.white,
+      padding: EdgeInsets.all(50),
       
       
       child:Container(
         
-        color: Colors.black,
+        
+        color: Colors.white,
         alignment: Alignment.center,
-        padding: EdgeInsets.all(50.0),
+        padding: EdgeInsets.all(20.0),
       child:GridView.count(
+        
+      
         crossAxisCount:3,
         crossAxisSpacing: 10,
         mainAxisSpacing: 10,
         
           
           children:<Widget> [
-            
-              ElevatedButton(onPressed: (){
-            Navigator.push(context, MaterialPageRoute(
-              builder: (context)=> Product_3CXPage(),
-              ));
+            FractionallySizedBox(
+              
+            widthFactor: 1,
+            heightFactor: 1,
+            child: Container(
+              color: Colors.white,
+              child:ElevatedButton(onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(
+                      builder: (context)=> Product_3CXPage(),
+                      ));
+                  }, 
+                child:_crearCard1())
 
-          }, child:_crearCard1()) ,
-              _crearCard2(),
-              _crearCard3(),
+              ),
+            ),
+            FractionallySizedBox(
+              
+            widthFactor: 1,
+            heightFactor: 1,
+            child: Container(
+              color: Colors.white,
+              child:ElevatedButton(onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(
+                      builder: (context)=> Product_3CXPage(),
+                      ));
+                  }, 
+                child:_crearCard2())
+
+              ),
+            ),
+                          
+            
+            _crearCard3(),
               _crearCard4(),
               _crearCard5(),
               _crearCard6(),
@@ -75,32 +104,19 @@ class HomePageState extends  State<HomePage> {
   Widget _crearCard1(){
 
     return Card(
-      elevation: 5,
+      color: Colors.white,
+      
+      elevation: 800,
 
-      child:Container(
+     
         
-        color: Colors.white,
-        child: Column(
-          children:<Widget> [
-            Container(
-             
-              child:Column( 
-                children: [
-                  Text("3CX"),
-                  Image.asset("assets/3CX.jpg",alignment: Alignment.center,),
-                  SizedBox(height:20,),
+        
+        child: Image.asset("assets/3CX.jpeg",fit: BoxFit.cover)
                   
-
-                ],
-              )),
-              
-            
+                  
             
 
-        ],
-        ),
-        ),
-       
+        
     );
 //aqui termina el card
 
@@ -113,19 +129,15 @@ class HomePageState extends  State<HomePage> {
     return Card(
       elevation: 5,
 
-      child: Container(
-        color: Colors.white,
-        child: Column(
-          children:<Widget> [
-            Text("4CX"),
-            Image.asset("assets/4CX.jpg",alignment: Alignment.center,),
-            SizedBox(height:20,),
+      
+           child: Image.asset("assets/4CX.jpeg"),
+            
+          
 
 
-        ],
-        ),
-        ),
-    );
+      
+        );
+        
   }
   Widget _crearCard3(){
 
@@ -173,9 +185,10 @@ class HomePageState extends  State<HomePage> {
         color: Colors.black45,
         child: Column(
           children:<Widget> [
-            Text("533-105"),
+            
             Image.asset("assets/533-105.jpg"),
             SizedBox(height:20,),
+            
 
 
         ],
@@ -210,9 +223,10 @@ class HomePageState extends  State<HomePage> {
         color: Colors.black45,
         child: Column(
           children:<Widget> [
-            Text("JS205"),
+            
             Image.asset("assets/JS205.jpg"),
             SizedBox(height:20,),
+            
 
 
         ],
