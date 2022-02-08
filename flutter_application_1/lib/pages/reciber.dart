@@ -26,7 +26,7 @@ class ReceiverPage extends StatelessWidget {
           color: Colors.white,
           child: ElevatedButton(
             
-            child:Image.asset("assets/logo.png") ,
+            child:Image.asset("assets/logo.jpg") ,
             onPressed: (){
             Navigator.push(context, MaterialPageRoute(
               builder: (context)=> SelectorPage(),

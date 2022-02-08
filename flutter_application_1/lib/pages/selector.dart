@@ -11,7 +11,7 @@ class SelectorState extends  State<SelectorPage> {
  
  
   int _current=0;
-
+  double _currentSliderValue= 250;
 
 
   @override

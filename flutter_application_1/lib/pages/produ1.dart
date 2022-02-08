@@ -44,7 +44,7 @@ class Product_3CXPageState extends  State<Product_3CXPage> {
                   children: [
                     
                   Text("Seleccione horas "),
-                  _crearCard1()
+                  _crearSlider()
                   ],) 
                 ,
               ],
@@ -96,7 +96,7 @@ class Product_3CXPageState extends  State<Product_3CXPage> {
         
     
   }
-  Widget _crearCard1(){
+  Widget _crearSlider(){
 
     
     return Container(

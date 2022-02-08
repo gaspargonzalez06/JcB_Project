@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'JcB',
       theme: ThemeData(
-        
+        highlightColor: Colors.red,
         primarySwatch:Colors.orange, 
       ),
       initialRoute:"receiver",
