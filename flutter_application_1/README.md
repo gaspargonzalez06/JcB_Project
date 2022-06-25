@@ -1,5 +1,23 @@
 # flutter_application_1
 
+jcb project
+
+Paso1 : crear la base de datos con el nombre jcb_database2 como viene el archivo
+Paso2 : crear en carpeta xammp htdocs/ llamada ---mydb2---
+Paso3 : actualizar pubspect.yaml para obtener las librerias
+Paso4: correr la aplicacion usandos el comando  ("flutter run --no-sound-null-safety")
+
+
+
+
+
+
+
+
+
+
+
+
 A new Flutter project.
 
 ## Getting Started
