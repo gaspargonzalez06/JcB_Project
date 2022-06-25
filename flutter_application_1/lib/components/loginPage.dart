@@ -214,10 +214,7 @@ class _BodyState extends State<Body> {
             
           ],
         ),
-        Image.asset(
-                'images/main.jpg',
-                
-              ),
+        
       ],
     );
   }
